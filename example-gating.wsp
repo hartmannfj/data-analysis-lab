@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Workspace version="20.0"  modDate="Wed Oct 26 16:36:25 CEST 2016"  clientTimestamp="1477492585578"  flowJoVersion="10.2"  drawRowBorders="1"  drawColumnBorders="1"  hideCompNodes="1"  curGroup="All Samples"  groupPaneHeight="-1"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating"  xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations"  xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes"  xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://www.isac-net.org/std/Gating-ML/v2.0/gating/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://www.isac-net.org/std/Gating-ML/v2.0/gating/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://www.isac-net.org/std/Gating-ML/v2.0/gating/DataTypes.v2.0.xsd "  nonAutoSaveFileName="file:/Users/hartmann/R%20projects/data-analysis-lab/example-gating.wsp" >
+   <WindowPosition x="506"  y="23"  width="1005"  height="650"  displayed="1"  panelState="" />
+   <TextTraits font="SansSerif"  size="11"  name=""  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+   <Columns>
+     <TColumn width="440" >
+       <Property key="fj.appnode.prop.name" />
+     </TColumn>
+     <TColumn width="281" >
+       <Property key="fj.appnode.prop.statistic" />
+     </TColumn>
+     <TColumn width="280" >
+       <Property key="fj.appnode.prop.ncells" />
+     </TColumn>
+   </Columns>
+   <Matrices/>
+   <Cytometers>
+     <Cytometer name="CYTOF"  cyt="DVSSCIENCES-CYTOF-6.0.626"  useFCS3="1"  extraNegs="0"  widthBasis="-5"  linMin="0"  logMin="-5"  linMax="12000"  logMax="12000"  linearRescale="1"  logRescale="1"  linFromKW="1"  logFromKW="1"  useGain="1"  useTransform="1"  transformType="ARCSINH"  manufacturer=""  serialnumber=""  homepage="workspaces-and-samples/flowjo-and-your-cytometer/ws-instrumentation/"  icon="cytof.png" >
+       <LinParams>
+         <Param>time</Param>
+       </LinParams>
+       <LogParams/>
+       <FilterParams/>
+       <TransformStore/>
+     </Cytometer>
+   </Cytometers>
+   <Groups>
+     <GroupNode name="All Samples"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Subpopulations>
+         <Population name="cells"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="126089" >
+           <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+             <Axis dimension="x"  name="Ir191Di"  label=""  auto="auto" />
+             <Axis dimension="y"  name="Event_length"  label=""  auto="auto" />
+             <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+             <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+               <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+               <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+             </GraphEnvironment>
+           </Graph>
+           <Gate gating:id="ID1855526749" >
+             <gating:PolygonGate eventsInside="1"  annoOffsetX="29"  annoOffsetY="-59"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="Ir191Di" />
+               </gating:dimension>
+               <gating:dimension>
+                 <data-type:fcs-dimension data-type:name="Event_length" />
+               </gating:dimension>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="285.6403866686" />
+                 <gating:coordinate data-type:value="491.2239121429" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="1307.6550782607" />
+                 <gating:coordinate data-type:value="6.6887069293" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="325.4241086211" />
+                 <gating:coordinate data-type:value="4.2917142033" />
+               </gating:vertex>
+               <gating:vertex>
+                 <gating:coordinate data-type:value="74.2305749366" />
+                 <gating:coordinate data-type:value="399.1675077448" />
+               </gating:vertex>
+             </gating:PolygonGate>
+           </Gate>
+           <Subpopulations>
+             <Population name="CD45-live"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="92993" >
+               <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                 <Axis dimension="x"  name="Pt195Di"  label=""  auto="auto" />
+                 <Axis dimension="y"  name="Sm147Di"  label=""  auto="auto" />
+                 <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                 <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                   <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                   <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+                 </GraphEnvironment>
+               </Graph>
+               <Gate gating:id="ID264413300"  gating:parent_id="ID1855526749" >
+                 <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                   <gating:dimension gating:min="-1.1809211827758537"  gating:max="261.8581112016724" >
+                     <data-type:fcs-dimension data-type:name="Pt195Di" />
+                   </gating:dimension>
+                   <gating:dimension gating:min="10.254482108437424"  gating:max="684.6645770480324" >
+                     <data-type:fcs-dimension data-type:name="Sm147Di" />
+                   </gating:dimension>
+                 </gating:RectangleGate>
+               </Gate>
+             </Population>
+           </Subpopulations>
+         </Population>
+       </Subpopulations>
+       <Group name="All Samples"  live="1"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#000000"  fontStyle="bold" >
+         <Criteria/>
+         <SampleRefs>
+           <SampleRef sampleID="1" />
+           <SampleRef sampleID="2" />
+           <SampleRef sampleID="3" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="Compensation"  annotation=""  owningGroup="Compensation"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="Compensation"  live="1"  role="ws.group.dlog.compensation"  key=""  synchronized="0"  foreground="#bc1900"  fontStyle="bold" >
+         <Criteria>
+           <Criterion connector="And"  keyword="$FIL"  function="Contains"  value="comp" />
+           <Criterion connector="Or"  keyword="$FIL"  function="Contains"  value="unstained" />
+         </Criteria>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+   </Groups>
+   <SampleList>
+     <Sample>
+       <DataSet uri="file:/Users/hartmann/R%20projects/data-analysis-lab/files/ungated/csf2KO_normalized.fcs"  sampleID="1" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0.0028305478"  transforms:maxRange="421"  gain="0.0010016093" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Event_length" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ce140Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Pr141Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd142Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd144Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd145Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd146Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm147Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd148Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm149Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd150Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Eu151Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm152Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Eu153Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm154Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Tb159Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Gd160Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ho165Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er166Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er168Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Tm169Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er170Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb171Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb172Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb174Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Lu175Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ir191Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ir193Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Pt195Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="beadDist" />
+         </transforms:fasinh>
+       </Transformations>
+       <Keywords>
+         <Keyword name="$ENDDATA"  value="23169596" />
+         <Keyword name="$BEGINDATA"  value="2180" />
+         <Keyword name="$P31E"  value="0,0" />
+         <Keyword name="$P31R"  value="139" />
+         <Keyword name="$P31S"  value="beadDist" />
+         <Keyword name="$P31N"  value="beadDist" />
+         <Keyword name="$P31B"  value="32" />
+         <Keyword name="$P30E"  value="0,0" />
+         <Keyword name="$P30R"  value="32526" />
+         <Keyword name="$P30S"  value="Dead" />
+         <Keyword name="$P30N"  value="Pt195Di" />
+         <Keyword name="$P30B"  value="32" />
+         <Keyword name="$P29E"  value="0,0" />
+         <Keyword name="$P29R"  value="23190" />
+         <Keyword name="$P29S"  value="DNA2" />
+         <Keyword name="$P29N"  value="Ir193Di" />
+         <Keyword name="$P29B"  value="32" />
+         <Keyword name="$P28E"  value="0,0" />
+         <Keyword name="$P28R"  value="13235" />
+         <Keyword name="$P28S"  value="DNA1" />
+         <Keyword name="$P28N"  value="Ir191Di" />
+         <Keyword name="$P28B"  value="32" />
+         <Keyword name="$P27E"  value="0,0" />
+         <Keyword name="$P27R"  value="10055" />
+         <Keyword name="$P27S"  value="CD127" />
+         <Keyword name="$P27N"  value="Lu175Di" />
+         <Keyword name="$P27B"  value="32" />
+         <Keyword name="$P26E"  value="0,0" />
+         <Keyword name="$P26R"  value="14050" />
+         <Keyword name="$P26S"  value="MHCII" />
+         <Keyword name="$P26N"  value="Yb174Di" />
+         <Keyword name="$P26B"  value="32" />
+         <Keyword name="$P25E"  value="0,0" />
+         <Keyword name="$P25R"  value="685" />
+         <Keyword name="$P25S"  value="CD4" />
+         <Keyword name="$P25N"  value="Yb172Di" />
+         <Keyword name="$P25B"  value="32" />
+         <Keyword name="$P24E"  value="0,0" />
+         <Keyword name="$P24R"  value="3008" />
+         <Keyword name="$P24S"  value="CD44" />
+         <Keyword name="$P24N"  value="Yb171Di" />
+         <Keyword name="$P24B"  value="32" />
+         <Keyword name="$P23E"  value="0,0" />
+         <Keyword name="$P23R"  value="1033" />
+         <Keyword name="$P23S"  value="NK1-1" />
+         <Keyword name="$P23N"  value="Er170Di" />
+         <Keyword name="$P23B"  value="32" />
+         <Keyword name="$P22E"  value="0,0" />
+         <Keyword name="$P22R"  value="173" />
+         <Keyword name="$P22S"  value="TCRb" />
+         <Keyword name="$P22N"  value="Tm169Di" />
+         <Keyword name="$P22B"  value="32" />
+         <Keyword name="$P21E"  value="0,0" />
+         <Keyword name="$P21R"  value="245" />
+         <Keyword name="$P21S"  value="CD8a" />
+         <Keyword name="$P21N"  value="Er168Di" />
+         <Keyword name="$P21B"  value="32" />
+         <Keyword name="$P20E"  value="0,0" />
+         <Keyword name="$P20R"  value="286" />
+         <Keyword name="$P20S"  value="CD117" />
+         <Keyword name="$P20N"  value="Er166Di" />
+         <Keyword name="$P20B"  value="32" />
+         <Keyword name="$P19E"  value="0,0" />
+         <Keyword name="$P19R"  value="10008" />
+         <Keyword name="$P19N"  value="Ho165Di" />
+         <Keyword name="$P19B"  value="32" />
+         <Keyword name="$P18E"  value="0,0" />
+         <Keyword name="$P18R"  value="3974" />
+         <Keyword name="$P18S"  value="CD62L" />
+         <Keyword name="$P18N"  value="Gd160Di" />
+         <Keyword name="$P18B"  value="32" />
+         <Keyword name="$P17E"  value="0,0" />
+         <Keyword name="$P17R"  value="106" />
+         <Keyword name="$P17S"  value="CD23" />
+         <Keyword name="$P17N"  value="Tb159Di" />
+         <Keyword name="$P17B"  value="32" />
+         <Keyword name="$P16E"  value="0,0" />
+         <Keyword name="$P16R"  value="370" />
+         <Keyword name="$P16S"  value="Ter119" />
+         <Keyword name="$P16N"  value="Sm154Di" />
+         <Keyword name="$P16B"  value="32" />
+         <Keyword name="$P15E"  value="0,0" />
+         <Keyword name="$P15R"  value="12236" />
+         <Keyword name="$P15S"  value="CD335" />
+         <Keyword name="$P15N"  value="Eu153Di" />
+         <Keyword name="$P15B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14R"  value="883" />
+         <Keyword name="$P14S"  value="CD3" />
+         <Keyword name="$P14N"  value="Sm152Di" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13R"  value="10001" />
+         <Keyword name="$P13S"  value="CD25" />
+         <Keyword name="$P13N"  value="Eu151Di" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12R"  value="2659" />
+         <Keyword name="$P12S"  value="Ly6C" />
+         <Keyword name="$P12N"  value="Nd150Di" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11R"  value="666" />
+         <Keyword name="$P11S"  value="CD19" />
+         <Keyword name="$P11N"  value="Sm149Di" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10R"  value="2293" />
+         <Keyword name="$P10S"  value="CD11b" />
+         <Keyword name="$P10N"  value="Nd148Di" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9R"  value="966" />
+         <Keyword name="$P9S"  value="CD45" />
+         <Keyword name="$P9N"  value="Sm147Di" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8R"  value="260" />
+         <Keyword name="$P8S"  value="F4-80" />
+         <Keyword name="$P8N"  value="Nd146Di" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7R"  value="2711" />
+         <Keyword name="$P7S"  value="CD69" />
+         <Keyword name="$P7N"  value="Nd145Di" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6R"  value="30890" />
+         <Keyword name="$P6S"  value="CD115" />
+         <Keyword name="$P6N"  value="Nd144Di" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5R"  value="7122" />
+         <Keyword name="$P5S"  value="CD11c" />
+         <Keyword name="$P5N"  value="Nd142Di" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4R"  value="499" />
+         <Keyword name="$P4S"  value="Ly6G" />
+         <Keyword name="$P4N"  value="Pr141Di" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3R"  value="25661" />
+         <Keyword name="$P3N"  value="Ce140Di" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2R"  value="100" />
+         <Keyword name="$P2N"  value="Event_length" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1R"  value="420327" />
+         <Keyword name="$P1N"  value="Time" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$CYTSN"  value="cytof2" />
+         <Keyword name="$DATE"  value="23-Feb-2016" />
+         <Keyword name="$CYT"  value="DVSSCIENCES-CYTOF-6.0.626" />
+         <Keyword name="$ETIM"  value="12:10:10" />
+         <Keyword name="$BTIM"  value="12:03:09" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="ORIGINALGUID"  value="1.fcs" />
+         <Keyword name="GUID"  value="1.fcs" />
+         <Keyword name="FILENAME"  value="csf2KO_normalized.fcs" />
+         <Keyword name="$COM"  value="PengQiu FCS writer" />
+         <Keyword name="CREATOR"  value="PengQiu FCS writer" />
+         <Keyword name="FCSversion"  value="3" />
+         <Keyword name="$PAR"  value="31" />
+         <Keyword name="$TOT"  value="186834" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P19S"  value="" />
+       </Keywords>
+       <SampleNode name="csf2KO_normalized.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="186834"  sampleID="1" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="Ir191Di"  label=""  auto="auto" />
+           <Axis dimension="y"  name="Event_length"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="cells"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="126089" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+               <Axis dimension="x"  name="Ir191Di"  label=""  auto="auto" />
+               <Axis dimension="y"  name="Event_length"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID70161230" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="29"  annoOffsetY="-59"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="Ir191Di" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="Event_length" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="285.6403866686" />
+                   <gating:coordinate data-type:value="491.2239121429" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="1307.6550782607" />
+                   <gating:coordinate data-type:value="6.6887069293" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="325.4241086211" />
+                   <gating:coordinate data-type:value="4.2917142033" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="74.2305749366" />
+                   <gating:coordinate data-type:value="399.1675077448" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="CD45-live"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="119396" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                   <Axis dimension="x"  name="Pt195Di"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="Sm147Di"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                     <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID693695556"  gating:parent_id="ID70161230" >
+                   <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                     <gating:dimension gating:min="-1.1809211827758537"  gating:max="261.8581112016724" >
+                       <data-type:fcs-dimension data-type:name="Pt195Di" />
+                     </gating:dimension>
+                     <gating:dimension gating:min="10.254482108437424"  gating:max="684.6645770480324" >
+                       <data-type:fcs-dimension data-type:name="Sm147Di" />
+                     </gating:dimension>
+                   </gating:RectangleGate>
+                 </Gate>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/hartmann/R%20projects/data-analysis-lab/files/ungated/WT_normalized.fcs"  sampleID="3" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0.0000390625"  transforms:maxRange="421"  gain="0.0010016023" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Event_length" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ce140Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Pr141Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd142Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd144Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd145Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd146Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm147Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd148Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm149Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd150Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Eu151Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm152Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Eu153Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm154Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Tb159Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Gd160Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ho165Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er166Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er168Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Tm169Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er170Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb171Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb172Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb174Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Lu175Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ir191Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ir193Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Pt195Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="beadDist" />
+         </transforms:fasinh>
+       </Transformations>
+       <Keywords>
+         <Keyword name="$ENDDATA"  value="21905537" />
+         <Keyword name="$BEGINDATA"  value="2177" />
+         <Keyword name="$P31E"  value="0,0" />
+         <Keyword name="$P31R"  value="128" />
+         <Keyword name="$P31S"  value="beadDist" />
+         <Keyword name="$P31N"  value="beadDist" />
+         <Keyword name="$P31B"  value="32" />
+         <Keyword name="$P30E"  value="0,0" />
+         <Keyword name="$P30R"  value="18519" />
+         <Keyword name="$P30S"  value="Dead" />
+         <Keyword name="$P30N"  value="Pt195Di" />
+         <Keyword name="$P30B"  value="32" />
+         <Keyword name="$P29E"  value="0,0" />
+         <Keyword name="$P29R"  value="23426" />
+         <Keyword name="$P29S"  value="DNA2" />
+         <Keyword name="$P29N"  value="Ir193Di" />
+         <Keyword name="$P29B"  value="32" />
+         <Keyword name="$P28E"  value="0,0" />
+         <Keyword name="$P28R"  value="14306" />
+         <Keyword name="$P28S"  value="DNA1" />
+         <Keyword name="$P28N"  value="Ir191Di" />
+         <Keyword name="$P28B"  value="32" />
+         <Keyword name="$P27E"  value="0,0" />
+         <Keyword name="$P27R"  value="11277" />
+         <Keyword name="$P27S"  value="CD127" />
+         <Keyword name="$P27N"  value="Lu175Di" />
+         <Keyword name="$P27B"  value="32" />
+         <Keyword name="$P26E"  value="0,0" />
+         <Keyword name="$P26R"  value="8366" />
+         <Keyword name="$P26S"  value="MHCII" />
+         <Keyword name="$P26N"  value="Yb174Di" />
+         <Keyword name="$P26B"  value="32" />
+         <Keyword name="$P25E"  value="0,0" />
+         <Keyword name="$P25R"  value="710" />
+         <Keyword name="$P25S"  value="CD4" />
+         <Keyword name="$P25N"  value="Yb172Di" />
+         <Keyword name="$P25B"  value="32" />
+         <Keyword name="$P24E"  value="0,0" />
+         <Keyword name="$P24R"  value="1121" />
+         <Keyword name="$P24S"  value="CD44" />
+         <Keyword name="$P24N"  value="Yb171Di" />
+         <Keyword name="$P24B"  value="32" />
+         <Keyword name="$P23E"  value="0,0" />
+         <Keyword name="$P23R"  value="3166" />
+         <Keyword name="$P23S"  value="NK1-1" />
+         <Keyword name="$P23N"  value="Er170Di" />
+         <Keyword name="$P23B"  value="32" />
+         <Keyword name="$P22E"  value="0,0" />
+         <Keyword name="$P22R"  value="196" />
+         <Keyword name="$P22S"  value="TCRb" />
+         <Keyword name="$P22N"  value="Tm169Di" />
+         <Keyword name="$P22B"  value="32" />
+         <Keyword name="$P21E"  value="0,0" />
+         <Keyword name="$P21R"  value="223" />
+         <Keyword name="$P21S"  value="CD8a" />
+         <Keyword name="$P21N"  value="Er168Di" />
+         <Keyword name="$P21B"  value="32" />
+         <Keyword name="$P20E"  value="0,0" />
+         <Keyword name="$P20R"  value="1304" />
+         <Keyword name="$P20S"  value="CD117" />
+         <Keyword name="$P20N"  value="Er166Di" />
+         <Keyword name="$P20B"  value="32" />
+         <Keyword name="$P19E"  value="0,0" />
+         <Keyword name="$P19R"  value="10933" />
+         <Keyword name="$P19N"  value="Ho165Di" />
+         <Keyword name="$P19B"  value="32" />
+         <Keyword name="$P18E"  value="0,0" />
+         <Keyword name="$P18R"  value="7103" />
+         <Keyword name="$P18S"  value="CD62L" />
+         <Keyword name="$P18N"  value="Gd160Di" />
+         <Keyword name="$P18B"  value="32" />
+         <Keyword name="$P17E"  value="0,0" />
+         <Keyword name="$P17R"  value="401" />
+         <Keyword name="$P17S"  value="CD23" />
+         <Keyword name="$P17N"  value="Tb159Di" />
+         <Keyword name="$P17B"  value="32" />
+         <Keyword name="$P16E"  value="0,0" />
+         <Keyword name="$P16R"  value="462" />
+         <Keyword name="$P16S"  value="Ter119" />
+         <Keyword name="$P16N"  value="Sm154Di" />
+         <Keyword name="$P16B"  value="32" />
+         <Keyword name="$P15E"  value="0,0" />
+         <Keyword name="$P15R"  value="13300" />
+         <Keyword name="$P15S"  value="CD335" />
+         <Keyword name="$P15N"  value="Eu153Di" />
+         <Keyword name="$P15B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14R"  value="445" />
+         <Keyword name="$P14S"  value="CD3" />
+         <Keyword name="$P14N"  value="Sm152Di" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13R"  value="10561" />
+         <Keyword name="$P13S"  value="CD25" />
+         <Keyword name="$P13N"  value="Eu151Di" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12R"  value="25111" />
+         <Keyword name="$P12S"  value="Ly6C" />
+         <Keyword name="$P12N"  value="Nd150Di" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11R"  value="791" />
+         <Keyword name="$P11S"  value="CD19" />
+         <Keyword name="$P11N"  value="Sm149Di" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10R"  value="984" />
+         <Keyword name="$P10S"  value="CD11b" />
+         <Keyword name="$P10N"  value="Nd148Di" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9R"  value="3581" />
+         <Keyword name="$P9S"  value="CD45" />
+         <Keyword name="$P9N"  value="Sm147Di" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8R"  value="681" />
+         <Keyword name="$P8S"  value="F4-80" />
+         <Keyword name="$P8N"  value="Nd146Di" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7R"  value="4911" />
+         <Keyword name="$P7S"  value="CD69" />
+         <Keyword name="$P7N"  value="Nd145Di" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6R"  value="35982" />
+         <Keyword name="$P6S"  value="CD115" />
+         <Keyword name="$P6N"  value="Nd144Di" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5R"  value="4791" />
+         <Keyword name="$P5S"  value="CD11c" />
+         <Keyword name="$P5N"  value="Nd142Di" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4R"  value="426" />
+         <Keyword name="$P4S"  value="Ly6G" />
+         <Keyword name="$P4N"  value="Pr141Di" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3R"  value="17424" />
+         <Keyword name="$P3N"  value="Ce140Di" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2R"  value="100" />
+         <Keyword name="$P2N"  value="Event_length" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1R"  value="420327" />
+         <Keyword name="$P1N"  value="Time" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$CYTSN"  value="cytof2" />
+         <Keyword name="$DATE"  value="23-Feb-2016" />
+         <Keyword name="$CYT"  value="DVSSCIENCES-CYTOF-6.0.626" />
+         <Keyword name="$ETIM"  value="11:56:16" />
+         <Keyword name="$BTIM"  value="11:49:15" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="ORIGINALGUID"  value="1.fcs" />
+         <Keyword name="GUID"  value="1.fcs" />
+         <Keyword name="FILENAME"  value="WT_normalized.fcs" />
+         <Keyword name="$COM"  value="PengQiu FCS writer" />
+         <Keyword name="CREATOR"  value="PengQiu FCS writer" />
+         <Keyword name="FCSversion"  value="3" />
+         <Keyword name="$PAR"  value="31" />
+         <Keyword name="$TOT"  value="176640" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P19S"  value="" />
+       </Keywords>
+       <SampleNode name="WT_normalized.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="176640"  sampleID="3" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="Ir191Di"  label=""  auto="auto" />
+           <Axis dimension="y"  name="Event_length"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="cells"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="123878" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+               <Axis dimension="x"  name="Pt195Di"  label=""  auto="auto" />
+               <Axis dimension="y"  name="Sm147Di"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+               <WindowPosition x="1186"  y="23"  width="390"  height="520" />
+             </Graph>
+             <Gate gating:id="ID584183102" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="29"  annoOffsetY="-59"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="Ir191Di" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="Event_length" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="285.6403866686" />
+                   <gating:coordinate data-type:value="491.2239121429" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="1307.6550782607" />
+                   <gating:coordinate data-type:value="6.6887069293" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="325.4241086211" />
+                   <gating:coordinate data-type:value="4.2917142033" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="74.2305749366" />
+                   <gating:coordinate data-type:value="399.1675077448" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="CD45-live"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="119189" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                   <Axis dimension="x"  name="Pt195Di"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="Sm147Di"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                     <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID1073361677"  gating:parent_id="ID584183102" >
+                   <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                     <gating:dimension gating:min="-1.1809211827758537"  gating:max="261.8581112016724" >
+                       <data-type:fcs-dimension data-type:name="Pt195Di" />
+                     </gating:dimension>
+                     <gating:dimension gating:min="10.254482108437424"  gating:max="684.6645770480324" >
+                       <data-type:fcs-dimension data-type:name="Sm147Di" />
+                     </gating:dimension>
+                   </gating:RectangleGate>
+                 </Gate>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/hartmann/R%20projects/data-analysis-lab/files/ungated/RAG_normalized.fcs"  sampleID="2" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0.0006911147"  transforms:maxRange="421"  gain="0.0010016155" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Event_length" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ce140Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Pr141Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd142Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd144Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd145Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd146Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm147Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd148Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm149Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Nd150Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Eu151Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm152Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Eu153Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Sm154Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Tb159Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Gd160Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ho165Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er166Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er168Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Tm169Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Er170Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb171Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb172Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Yb174Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Lu175Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ir191Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Ir193Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="Pt195Di" />
+         </transforms:fasinh>
+         <transforms:fasinh transforms:length="256"  transforms:maxRange="12000"  transforms:T="12000"  transforms:A="0.6989700043"  transforms:M="4.079181246"  transforms:W="-12000" >
+           <data-type:parameter data-type:name="beadDist" />
+         </transforms:fasinh>
+       </Transformations>
+       <Keywords>
+         <Keyword name="$ENDDATA"  value="28332700" />
+         <Keyword name="$BEGINDATA"  value="2172" />
+         <Keyword name="$P31E"  value="0,0" />
+         <Keyword name="$P31R"  value="151" />
+         <Keyword name="$P31S"  value="beadDist" />
+         <Keyword name="$P31N"  value="beadDist" />
+         <Keyword name="$P31B"  value="32" />
+         <Keyword name="$P30E"  value="0,0" />
+         <Keyword name="$P30R"  value="44129" />
+         <Keyword name="$P30S"  value="Dead" />
+         <Keyword name="$P30N"  value="Pt195Di" />
+         <Keyword name="$P30B"  value="32" />
+         <Keyword name="$P29E"  value="0,0" />
+         <Keyword name="$P29R"  value="17270" />
+         <Keyword name="$P29S"  value="DNA2" />
+         <Keyword name="$P29N"  value="Ir193Di" />
+         <Keyword name="$P29B"  value="32" />
+         <Keyword name="$P28E"  value="0,0" />
+         <Keyword name="$P28R"  value="9689" />
+         <Keyword name="$P28S"  value="DNA1" />
+         <Keyword name="$P28N"  value="Ir191Di" />
+         <Keyword name="$P28B"  value="32" />
+         <Keyword name="$P27E"  value="0,0" />
+         <Keyword name="$P27R"  value="1524" />
+         <Keyword name="$P27S"  value="CD127" />
+         <Keyword name="$P27N"  value="Lu175Di" />
+         <Keyword name="$P27B"  value="32" />
+         <Keyword name="$P26E"  value="0,0" />
+         <Keyword name="$P26R"  value="4506" />
+         <Keyword name="$P26S"  value="MHCII" />
+         <Keyword name="$P26N"  value="Yb174Di" />
+         <Keyword name="$P26B"  value="32" />
+         <Keyword name="$P25E"  value="0,0" />
+         <Keyword name="$P25R"  value="5266" />
+         <Keyword name="$P25S"  value="CD4" />
+         <Keyword name="$P25N"  value="Yb172Di" />
+         <Keyword name="$P25B"  value="32" />
+         <Keyword name="$P24E"  value="0,0" />
+         <Keyword name="$P24R"  value="1428" />
+         <Keyword name="$P24S"  value="CD44" />
+         <Keyword name="$P24N"  value="Yb171Di" />
+         <Keyword name="$P24B"  value="32" />
+         <Keyword name="$P23E"  value="0,0" />
+         <Keyword name="$P23R"  value="138" />
+         <Keyword name="$P23S"  value="NK1-1" />
+         <Keyword name="$P23N"  value="Er170Di" />
+         <Keyword name="$P23B"  value="32" />
+         <Keyword name="$P22E"  value="0,0" />
+         <Keyword name="$P22R"  value="86" />
+         <Keyword name="$P22S"  value="TCRb" />
+         <Keyword name="$P22N"  value="Tm169Di" />
+         <Keyword name="$P22B"  value="32" />
+         <Keyword name="$P21E"  value="0,0" />
+         <Keyword name="$P21R"  value="166" />
+         <Keyword name="$P21S"  value="CD8a" />
+         <Keyword name="$P21N"  value="Er168Di" />
+         <Keyword name="$P21B"  value="32" />
+         <Keyword name="$P20E"  value="0,0" />
+         <Keyword name="$P20R"  value="290" />
+         <Keyword name="$P20S"  value="CD117" />
+         <Keyword name="$P20N"  value="Er166Di" />
+         <Keyword name="$P20B"  value="32" />
+         <Keyword name="$P19E"  value="0,0" />
+         <Keyword name="$P19R"  value="1539" />
+         <Keyword name="$P19N"  value="Ho165Di" />
+         <Keyword name="$P19B"  value="32" />
+         <Keyword name="$P18E"  value="0,0" />
+         <Keyword name="$P18R"  value="2369" />
+         <Keyword name="$P18S"  value="CD62L" />
+         <Keyword name="$P18N"  value="Gd160Di" />
+         <Keyword name="$P18B"  value="32" />
+         <Keyword name="$P17E"  value="0,0" />
+         <Keyword name="$P17R"  value="74" />
+         <Keyword name="$P17S"  value="CD23" />
+         <Keyword name="$P17N"  value="Tb159Di" />
+         <Keyword name="$P17B"  value="32" />
+         <Keyword name="$P16E"  value="0,0" />
+         <Keyword name="$P16R"  value="330" />
+         <Keyword name="$P16S"  value="Ter119" />
+         <Keyword name="$P16N"  value="Sm154Di" />
+         <Keyword name="$P16B"  value="32" />
+         <Keyword name="$P15E"  value="0,0" />
+         <Keyword name="$P15R"  value="1731" />
+         <Keyword name="$P15S"  value="CD335" />
+         <Keyword name="$P15N"  value="Eu153Di" />
+         <Keyword name="$P15B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14R"  value="366" />
+         <Keyword name="$P14S"  value="CD3" />
+         <Keyword name="$P14N"  value="Sm152Di" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13R"  value="1387" />
+         <Keyword name="$P13S"  value="CD25" />
+         <Keyword name="$P13N"  value="Eu151Di" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12R"  value="12176" />
+         <Keyword name="$P12S"  value="Ly6C" />
+         <Keyword name="$P12N"  value="Nd150Di" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11R"  value="184" />
+         <Keyword name="$P11S"  value="CD19" />
+         <Keyword name="$P11N"  value="Sm149Di" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10R"  value="1203" />
+         <Keyword name="$P10S"  value="CD11b" />
+         <Keyword name="$P10N"  value="Nd148Di" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9R"  value="891" />
+         <Keyword name="$P9S"  value="CD45" />
+         <Keyword name="$P9N"  value="Sm147Di" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8R"  value="247" />
+         <Keyword name="$P8S"  value="F4-80" />
+         <Keyword name="$P8N"  value="Nd146Di" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7R"  value="2005" />
+         <Keyword name="$P7S"  value="CD69" />
+         <Keyword name="$P7N"  value="Nd145Di" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6R"  value="38587" />
+         <Keyword name="$P6S"  value="CD115" />
+         <Keyword name="$P6N"  value="Nd144Di" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5R"  value="4037" />
+         <Keyword name="$P5S"  value="CD11c" />
+         <Keyword name="$P5N"  value="Nd142Di" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4R"  value="23912" />
+         <Keyword name="$P4S"  value="Ly6G" />
+         <Keyword name="$P4N"  value="Pr141Di" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3R"  value="24835" />
+         <Keyword name="$P3N"  value="Ce140Di" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2R"  value="100" />
+         <Keyword name="$P2N"  value="Event_length" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1R"  value="420322" />
+         <Keyword name="$P1N"  value="Time" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$CYTSN"  value="cytof2" />
+         <Keyword name="$DATE"  value="23-Feb-2016" />
+         <Keyword name="$CYT"  value="DVSSCIENCES-CYTOF-6.0.626" />
+         <Keyword name="$ETIM"  value="12:20:31" />
+         <Keyword name="$BTIM"  value="12:13:30" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="ORIGINALGUID"  value="1.fcs" />
+         <Keyword name="GUID"  value="1.fcs" />
+         <Keyword name="FILENAME"  value="RAG_normalized.fcs" />
+         <Keyword name="$COM"  value="PengQiu FCS writer" />
+         <Keyword name="CREATOR"  value="PengQiu FCS writer" />
+         <Keyword name="FCSversion"  value="3" />
+         <Keyword name="$PAR"  value="31" />
+         <Keyword name="$TOT"  value="228472" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P19S"  value="" />
+       </Keywords>
+       <SampleNode name="RAG_normalized.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="228472"  sampleID="2" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="Time"  label=""  auto="auto" />
+           <Axis dimension="y"  name="Event_length"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="cells"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="126205" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+               <Axis dimension="x"  name="Pt195Di"  label=""  auto="auto" />
+               <Axis dimension="y"  name="Sm147Di"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID1778684315" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="29"  annoOffsetY="-59"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="Ir191Di" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="Event_length" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="285.6403866686" />
+                   <gating:coordinate data-type:value="491.2239121429" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="1307.6550782607" />
+                   <gating:coordinate data-type:value="6.6887069293" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="325.4241086211" />
+                   <gating:coordinate data-type:value="4.2917142033" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="74.2305749366" />
+                   <gating:coordinate data-type:value="399.1675077448" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="CD45-live"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="92993" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+                   <Axis dimension="x"  name="Pt195Di"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="Sm147Di"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                     <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <WindowPosition x="1186"  y="23"  width="390"  height="520"  displayed="1"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID1127070539"  gating:parent_id="ID1778684315" >
+                   <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  percentX="0"  percentY="0" >
+                     <gating:dimension gating:min="-1.1809211827758537"  gating:max="261.8581112016724" >
+                       <data-type:fcs-dimension data-type:name="Pt195Di" />
+                     </gating:dimension>
+                     <gating:dimension gating:min="10.254482108437424"  gating:max="684.6645770480324" >
+                       <data-type:fcs-dimension data-type:name="Sm147Di" />
+                     </gating:dimension>
+                   </gating:RectangleGate>
+                 </Gate>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+   </SampleList>
+   <TableEditor title="FlowJo Tables: example-gating.wsp"  current="Table" >
+     <Table name="Table"  outputFile="file:/Users/hartmann/Table"  color="#00ffffff"  isBatch="0"  quickclose="0"  destination="toDisplay"  outputFormat="fj.document.type.table" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;NBSP&amp;NBSP&amp;NBSP&amp;NBSP&lt;IMG SRC=&quot;file:/Applications/FlowJo.app/Contents/Resources/Java/images/fj_icon.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;FlowJo, LLC&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="SAMPLE"  iterationValue=""  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+     </Table>
+   </TableEditor>
+   <LayoutEditor title="FlowJo Layouts: example-gating.wsp"  current="Layout"  showGrid="0"  showPageBreaks="0"  showGuides="0"  showDebugOutput="0" >
+     <Layout name="Layout"  outputFile="file:/Users/hartmann/Layout"  color="#00ffffff"  isBatch="0"  showGrid="0"  showRulers="1"  showDebugOutput="0"  showGuides="0"  showPageBreaks="1"  scale="1" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;NBSP&amp;NBSP&amp;NBSP&amp;NBSP&lt;IMG SRC=&quot;file:/Applications/FlowJo.app/Contents/Resources/Java/images/fj_icon.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;FlowJo, LLC&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="OFF"  iterationValue=""  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+       <BatchSettings useCurrentGroup="1"  length="3"  name=""  order="ACROSS"  direction="COLUMNS"  append="0"  destination="toLayout"  separatePages="0"  launchApp="1"  header="0"  footer="0"  commandLineBatch="0" />
+       <FigList/>
+     </Layout>
+     <WindowPosition x="0"  y="23"  width="900"  height="600" />
+   </LayoutEditor>
+   <Scripts>
+     <Script lang="text/javascript"  name="New Script 		 " />
+   </Scripts>
+   <Exports/>
+   <WSRibbon>
+     <Task name="ws.ribbon.task.flowjo" >
+       <Band name="ws.ribbon.band.flowjo" />
+       <Band name="ws.ribbon.band.help" />
+       <Band name="ws.ribbon.band.document" />
+     </Task>
+     <Task name="ws.ribbon.task.file" >
+       <Band name="ws.ribbon.band.document" />
+       <Band name="ws.ribbon.band.find" />
+     </Task>
+     <Task name="ws.ribbon.task.edit" >
+       <Band name="ws.ribbon.band.clipboard" />
+       <Band name="ws.ribbon.band.select" />
+       <Band name="ws.ribbon.band.expand" />
+     </Task>
+     <Task name="ws.ribbon.task.workspace" >
+       <Band name="ws.ribbon.band.groups" />
+       <Band name="ws.ribbon.band.populations" />
+       <Band name="ws.ribbon.band.statistics" />
+       <Band name="ws.ribbon.band.keywords" />
+     </Task>
+     <Task name="ws.ribbon.task.tools" >
+       <Band name="ws.ribbon.band.instrumentation" />
+       <Band name="ws.ribbon.band.biology" />
+       <Band name="ws.ribbon.band.boolean" />
+       <Band name="ws.ribbon.band.visualizations" />
+     </Task>
+     <Task name="ws.ribbon.task.settings" >
+       <Band name="ws.ribbon.band.settings" />
+       <Band name="ws.ribbon.band.font" />
+       <Band name="ws.ribbon.band.debug" />
+     </Task>
+   </WSRibbon>
+   <SOPS/>
+   <experiment/>
+ </Workspace>

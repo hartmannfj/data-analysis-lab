@@ -5,43 +5,6 @@
 
 
 
-###############################
-##### tiny R introduction #####
-###############################
-
-
-
-# get help
-?matrix  #get help
-
-
-
-# vectors
-v  <- 1:10
-print(v)
-v
-class(v)
-v[2]
-
-
-
-# matrices
-m <- matrix(1:6, nrow = 2)
-m
-m[,2]
-m[1,]
-
-
-
-# naming
-rownames(m)
-colnames(m)
-rownames(m) <- c("cell1", "cell2")
-colnames(m) <- c("CD3", "CD4", "CD8")
-m
-m[,"CD4"]
-
-
 
 
 
@@ -52,15 +15,20 @@ m[,"CD4"]
 
 
 source("http://bioconductor.org/biocLite.R")
-#biocLite("BiocUpgrade") # upgrading Bioconductor
+#biocLite("BiocUpgrade") # upgrading Bioconductor (if you have problems with installing something)
 biocLite("flowCore")    # for handling of fcs files in R
 biocLite("ggplot2")     # for advanced data plotting
-biocLite("gplots")       # for heatmaps
 biocLite("Rtsne")       # for calculating tSNE
 biocLite("RColorBrewer")        # additional color schemes
 biocLite("reshape2")    # reorganizing data
 biocLite("FlowSOM")     # FlowSOM clustering
 biocLite("plyr")        # for data handling
+biocLite("xlsx")
+biocLite("flowWorkspace")
+biocLite("ggcyto")      #plotting flowSets
+biocLite("devtools")
+devtools::install_github("JinmiaoChenLab/Rphenograph")
+
 
 
 
@@ -71,29 +39,84 @@ biocLite("plyr")        # for data handling
 ##########################
 
 
-
-library(flowCore)           
+    
 library(ggplot2)
-library(gplots)
 library(Rtsne)
 library(RColorBrewer)
 library(reshape2)
 library(FlowSOM)
 library(plyr)
+library(xlsx)
+library(flowWorkspace)
 
 
 
 
 
-################################################
-##### reading the fcs files into a flowset #####
-################################################
+########################################
+##### Importing a Workspace into R #####
+########################################
 
 
 
-data_location <- "//Users/hartmann/Dropbox/Annual School of Cytometry PARTICIPANTS/WS Data analysis/files/"
-fs  <- read.flowSet(path = data_location,
-                    pattern = ".fcs")
+# nice introductions
+# http://bioconductor.org/packages/release/bioc/vignettes/flowCore/inst/doc/HowTo-flowCore.pdf
+# http://bioconductor.org/packages/release/bioc/vignettes/openCyto/inst/doc/openCytoVignette.html
+# https://www.bioconductor.org/help/course-materials/2014/BioC2014/OpenCytoPracticalComponent.html
+
+
+
+# open the packages
+library(flowCore)  
+library(flowWorkspace)
+library(ggcyto)
+
+
+
+# specify the file locations
+dataDir <- "files/ungated/fcs"
+wsfile <- "files/ungated/workspace9.xml"
+
+
+
+# read in the Workspace
+ws <- openWorkspace(wsfile)
+gs <- parseWorkspace(ws, path = dataDir,  sampNloc = "sampleNode", #transform = F,
+                     compensation = NULL, name = 1)
+
+
+
+# explore the gating-set 
+plot(gs) #plot the hierarchy tree
+getNodes(gs) #show all the cell populations(/nodes)
+getPopStats(gs, format = "wide", statistic = "freq") #show the population statistics
+
+
+
+# plotting gates
+autoplot(gs[[1]], bins = 128) + theme(aspect.ratio = 1)
+autoplot(gs, "cd45-live", bins = 128) + theme(aspect.ratio = 1)
+
+
+
+# extracting a flowSet
+fs <- getData(gs, "cd45-live")
+
+
+
+# compensation for FACS data
+#compMat <- getCompensationMatrices(gs[[1]])
+#fs <- compensate(fs, compMat)
+
+
+
+# exploring the data further
+ggcyto(fs, aes(x = CD3, y = CD8a)) + geom_hex(bins = 128)
+ggcyto(fs, aes(x = Time, y = DNA1)) + geom_hex(bins = 128)
+ggcyto(fs, aes(x = CD3)) + geom_density()
+
+
+
 
 
 
@@ -101,6 +124,11 @@ fs  <- read.flowSet(path = data_location,
 #################################
 ##### exploring the dataset #####
 #################################
+
+
+
+# alternatively, read in fcs files directly
+fs  <- read.flowSet(path = "files/gated/", pattern = ".fcs")
 
 
 
@@ -357,6 +385,38 @@ ggplot(data_melt, aes(x = tSNE1, y = tSNE2, color = as.factor(value))) +
 
 
 
+####################################
+##### Other clustering methods #####
+####################################
+
+
+
+# phenograph
+library(Rphenograph)
+set.seed(123)
+pheno_out <- Rphenograph(data_rtsne, k = 100)
+p_labels <- factor(membership(pheno_out[[2]]))
+
+
+
+# prepare the metaclustering data
+data_meta_p <- cbind(tsne, p_labels, gate.source)
+data_melt_p <- melt(data_meta_p, id.vars = c("tSNE1", "tSNE2", "gate.source"))
+
+
+
+# plot tSNEs with clustering overlayed
+ggplot(data_melt_p, aes(x = tSNE1, y = tSNE2, color = as.factor(value))) +
+        geom_point(size = 0.05) +
+        coord_fixed(ratio = 1) +
+        #scale_color_manual(values = c(brewer.pal(12, "Paired"), brewer.pal(8, "Dark2"))) +
+        guides(colour = guide_legend(override.aes = list(size = 5))) +
+        ggtitle("tSNE map with overlaid metaclustering") 
+
+
+
+
+
 #####################################
 ##### analyse different samples #####
 #####################################
@@ -404,14 +464,12 @@ heat_mat
 
 
 # make a cluster heatmap
-heatmap.2(heat_mat, 
-          scale = "none",
-          Colv = T, Rowv = T,
-          trace = "none",
+heatmap(heat_mat, scale = "none", Colv = T, Rowv = T,
           col = colorRampPalette(c("black", "gold"))(n = 9),
           breaks = seq(0, 1, by = 0.1111111))
 
  
+
 
 
 
@@ -432,8 +490,8 @@ fm
 
 # show as bargraph plot
 df_plot <- data.frame(fm)
-df_plot$samples <- c("csf2 KO", "RAG", "WT")
-head(df_plot)
+df_plot$samples <- sampleNames(fs)
+df_plot
 
 
 
@@ -444,4 +502,80 @@ df_melt <- melt(df_plot, measure.vars = colnames(df_plot)[2:(choosen_k+1)])
 
 # make stacked bargraphs
 qplot(samples, data = df_melt, geom = "bar", weight = value, fill = variable) 
+
+
+
+
+
+###########################################################
+##### statistical analysis of gated data/excel sheets #####
+###########################################################
+
+
+
+# read in excel sheet with data (eg exported from FlowJo)
+freqs <- read.xlsx("files/frequencies.xlsx", sheetIndex = 1)
+freqs
+str(freqs)
+
+
+
+# read in meta data
+md <- read.xlsx("files/meta-data.xlsx", sheetIndex = 1)
+md
+str(md)
+
+
+
+# make a combined dataset
+dataset <- merge(freqs, md, by = "sample")
+dataset
+
+
+
+# calculate t-test
+t.test(dataset$CD4 ~ dataset$genotype)
+t.test(dataset$CD4[1:6], dataset$CD4[7:12])
+
+
+
+# calculate t.tests for all frequencies in excel sheet
+dataset_melt <- melt(dataset, id.vars = colnames(md))
+dataset_melt
+stat_out <- ddply(dataset_melt, .(variable), 
+                  function(x) {c(p_value = t.test(x$value ~ x$genotype)$p.value)}
+                  )
+stat_out
+
+
+
+# adjusting for multiple comparisons
+stat_out$adjusted <- p.adjust(stat_out$p_value, method = "BH")
+stat_out
+
+
+
+# plot 1
+ggplot(dataset_melt, aes(x = genotype, y = value)) +
+        geom_boxplot() +
+        facet_grid(~ variable, scales = "free")
+
+
+
+# plot 2
+ggplot(dataset_melt, aes(x = genotype, y = value)) +
+        geom_boxplot() +
+        facet_grid(organ ~ variable, scales = "free")
+
+
+
+# more elaborate t-test
+stat_out_2 <- ddply(dataset_melt, .(variable, organ), 
+                  function(x) {c(p_value = t.test(x$value ~ x$genotype)$p.value)}
+)
+stat_out_2
+
+
+
+
 
