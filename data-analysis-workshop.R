@@ -15,7 +15,7 @@
 
 
 source("http://bioconductor.org/biocLite.R")
-#biocLite("BiocUpgrade") # upgrading Bioconductor (if you have problems with installing something)
+biocLite("BiocUpgrade") # upgrading Bioconductor (if you have problems with installing something)
 biocLite("flowCore")    # for handling of fcs files in R
 biocLite("ggplot2")     # for advanced data plotting
 biocLite("Rtsne")       # for calculating tSNE
@@ -578,4 +578,35 @@ stat_out_2
 
 
 
+
+
+##########################
+##### Power analysis #####
+##########################
+
+
+
+# specify the things that you know or estimate
+n <- 5          # sample size (per group)
+delta <- 5      # difference between groups
+sd <- 3         # standard deviation of the groups (same for both)
+power <- NULL
+        
+
+   
+# you need to specify three out of the four variables 
+# and the last one will be returned
+power.t.test(n = n,
+             delta = delta,
+             sd = sd,
+             sig.level = 0.05,
+             power = power,
+             type = "two.sample",
+             alternative = "two.sided")
+
+
+
+# alternatively, check out the pwr package for power calculations
+# for anovas and so on
+# biocLite("pwr")
 
