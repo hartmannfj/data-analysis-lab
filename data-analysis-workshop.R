@@ -5,7 +5,41 @@
 
 
 
+###############################
+##### tiny R introduction #####
+###############################
 
+
+
+# get help
+?matrix  #get help
+
+
+
+# vectors
+v  <- 1:10
+print(v)
+v
+class(v)
+v[2]
+
+
+
+# matrices
+m <- matrix(1:6, nrow = 2)
+m
+m[,2]
+m[1,]
+
+
+
+# naming
+rownames(m)
+colnames(m)
+rownames(m) <- c("cell1", "cell2")
+colnames(m) <- c("CD3", "CD4", "CD8")
+m
+m[,"CD4"]
 
 
 ############################
